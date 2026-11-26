@@ -72,8 +72,6 @@ h2 { font-size: clamp(28px, 4vw, 40px); line-height: 1.2; margin: 10px 0 16px; f
 .card .go::before { content: ""; width: 22px; height: 16px; border-radius: 4px; background: #ff3d3d;
   clip-path: polygon(0 0,100% 0,100% 100%,0 100%,0 0,38% 25%,38% 75%,72% 50%,38% 25%); }
 .none { color: var(--muted); display: none; padding: 20px 0; }
-.thumbs { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-top: 96px; }
-.thumbs img { width: 100%; border-radius: 12px; border: 1px solid var(--line); display: block; }
 
 
 .verse { text-align: center; padding: 90px 24px; background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='none' stroke='%23F5C451' stroke-opacity='.10' stroke-width='1'%3E%3Cpath d='M40 8l9.4 22.6L72 40l-22.6 9.4L40 72l-9.4-22.6L8 40l22.6-9.4z'/%3E%3Crect x='17' y='17' width='46' height='46' transform='rotate(45 40 40)'/%3E%3Crect x='17' y='17' width='46' height='46'/%3E%3C/g%3E%3C/svg%3E"), linear-gradient(180deg, var(--bg), #0f1713 50%, var(--bg)); }
@@ -91,7 +89,7 @@ article p, article li { color: #d6d2c4; }
 .top { padding: 22px 0; border-bottom: 1px solid var(--line); }
 .top a { font-family: Amiri; font-size: 26px; color: var(--gold); }
 
-@media (max-width: 860px) { .show { grid-template-columns: 1fr; } .thumbs { grid-template-columns: 1fr; margin-top: 64px; } .search { width: 100%; } }
+@media (max-width: 860px) { .show { grid-template-columns: 1fr; } .search { width: 100%; } }
 </style></head>
 <body>
 <header class="hero"><div class="in">
@@ -122,86 +120,85 @@ in your own language.</p>
 <div class="grid" id="g"><a class="card" href="https://www.youtube.com/@quran-albanian" target="_blank" rel="noopener" data-q="albanian shqip quran albanian">
 <div class="flag"><img src="flags/albanian.jpg" alt="" loading="lazy"></div>
 <div class="txt"><span class="native" dir="ltr">Shqip</span>
-<span class="lang">Albanian · <bdi>Quran Albanian</bdi></span>
+<span class="lang">Albanian</span>
 <span class="go">Watch on YouTube</span></div></a><a class="card" href="https://www.youtube.com/@quran-bosnian" target="_blank" rel="noopener" data-q="bosnian bosanski quran bosnian">
 <div class="flag"><img src="flags/bosnian.jpg" alt="" loading="lazy"></div>
 <div class="txt"><span class="native" dir="ltr">Bosanski</span>
-<span class="lang">Bosnian · <bdi>Quran Bosnian</bdi></span>
+<span class="lang">Bosnian</span>
 <span class="go">Watch on YouTube</span></div></a><a class="card" href="https://www.youtube.com/@quran-czech" target="_blank" rel="noopener" data-q="czech čeština quran czech">
 <div class="flag"><img src="flags/czech.jpg" alt="" loading="lazy"></div>
 <div class="txt"><span class="native" dir="ltr">Čeština</span>
-<span class="lang">Czech · <bdi>Quran Czech</bdi></span>
+<span class="lang">Czech</span>
 <span class="go">Watch on YouTube</span></div></a><a class="card" href="https://www.youtube.com/@quran-dutch" target="_blank" rel="noopener" data-q="dutch nederlands quran dutch">
 <div class="flag"><img src="flags/dutch.jpg" alt="" loading="lazy"></div>
 <div class="txt"><span class="native" dir="ltr">Nederlands</span>
-<span class="lang">Dutch · <bdi>Quran Dutch</bdi></span>
+<span class="lang">Dutch</span>
 <span class="go">Watch on YouTube</span></div></a><a class="card" href="https://www.youtube.com/@quran-en-translation" target="_blank" rel="noopener" data-q="english english quran english">
 <div class="flag"><img src="flags/english.jpg" alt="" loading="lazy"></div>
 <div class="txt"><span class="native" dir="ltr">English</span>
-<span class="lang">English · <bdi>Quran English</bdi></span>
+<span class="lang">English</span>
 <span class="go">Watch on YouTube</span></div></a><a class="card" href="https://www.youtube.com/@quran-finnish" target="_blank" rel="noopener" data-q="finnish suomi quran finnish">
 <div class="flag"><img src="flags/finnish.jpg" alt="" loading="lazy"></div>
 <div class="txt"><span class="native" dir="ltr">Suomi</span>
-<span class="lang">Finnish · <bdi>Quran Finnish</bdi></span>
+<span class="lang">Finnish</span>
 <span class="go">Watch on YouTube</span></div></a><a class="card" href="https://www.youtube.com/@coran-francais" target="_blank" rel="noopener" data-q="french français coran français">
 <div class="flag"><img src="flags/french.jpg" alt="" loading="lazy"></div>
 <div class="txt"><span class="native" dir="ltr">Français</span>
-<span class="lang">French · <bdi>Coran Français</bdi></span>
+<span class="lang">French</span>
 <span class="go">Watch on YouTube</span></div></a><a class="card" href="https://www.youtube.com/@quran-deutsch" target="_blank" rel="noopener" data-q="german deutsch quran deutsch">
 <div class="flag"><img src="flags/german.jpg" alt="" loading="lazy"></div>
 <div class="txt"><span class="native" dir="ltr">Deutsch</span>
-<span class="lang">German · <bdi>Quran Deutsch</bdi></span>
+<span class="lang">German</span>
 <span class="go">Watch on YouTube</span></div></a><a class="card" href="https://www.youtube.com/@quran-hindi" target="_blank" rel="noopener" data-q="hindi हिन्दी quran hindi">
 <div class="flag"><img src="flags/india.svg" alt="" loading="lazy"></div>
 <div class="txt"><span class="native" dir="ltr">हिन्दी</span>
-<span class="lang">Hindi · <bdi>Quran Hindi</bdi></span>
+<span class="lang">Hindi</span>
 <span class="go">Watch on YouTube</span></div></a><a class="card" href="https://www.youtube.com/@quran-italian" target="_blank" rel="noopener" data-q="italian italiano quran italian">
 <div class="flag"><img src="flags/italian.jpg" alt="" loading="lazy"></div>
 <div class="txt"><span class="native" dir="ltr">Italiano</span>
-<span class="lang">Italian · <bdi>Quran Italian</bdi></span>
+<span class="lang">Italian</span>
 <span class="go">Watch on YouTube</span></div></a><a class="card" href="https://www.youtube.com/@quran-japanese" target="_blank" rel="noopener" data-q="japanese 日本語 quran japanese">
 <div class="flag"><img src="flags/japanese.jpg" alt="" loading="lazy"></div>
 <div class="txt"><span class="native" dir="ltr">日本語</span>
-<span class="lang">Japanese · <bdi>Quran Japanese</bdi></span>
+<span class="lang">Japanese</span>
 <span class="go">Watch on YouTube</span></div></a><a class="card" href="https://www.youtube.com/@quran-korean" target="_blank" rel="noopener" data-q="korean 한국어 quran korean">
 <div class="flag"><img src="flags/korean.jpg" alt="" loading="lazy"></div>
 <div class="txt"><span class="native" dir="ltr">한국어</span>
-<span class="lang">Korean · <bdi>Quran Korean</bdi></span>
+<span class="lang">Korean</span>
 <span class="go">Watch on YouTube</span></div></a><a class="card" href="https://www.youtube.com/@quran-ba-kurdi" target="_blank" rel="noopener" data-q="kurdish کوردی قورئانی پیرۆز به کوردی">
 <div class="flag"><img src="flags/kurdistan.jpg" alt="" loading="lazy"></div>
 <div class="txt"><span class="native" dir="rtl">کوردی</span>
-<span class="lang">Kurdish · <bdi>قورئانی پیرۆز به کوردی</bdi></span>
+<span class="lang">Kurdish</span>
 <span class="go">Watch on YouTube</span></div></a><a class="card" href="https://www.youtube.com/@quran-norwegian" target="_blank" rel="noopener" data-q="norwegian norsk quran norwegian">
 <div class="flag"><img src="flags/norwegian.jpg" alt="" loading="lazy"></div>
 <div class="txt"><span class="native" dir="ltr">Norsk</span>
-<span class="lang">Norwegian · <bdi>Quran Norwegian</bdi></span>
+<span class="lang">Norwegian</span>
 <span class="go">Watch on YouTube</span></div></a><a class="card" href="https://www.youtube.com/@Quran-in-Persian" target="_blank" rel="noopener" data-q="persian فارسی quran persian">
 <div class="flag"><img src="flags/persian.jpg" alt="" loading="lazy"></div>
 <div class="txt"><span class="native" dir="rtl">فارسی</span>
-<span class="lang">Persian · <bdi>Quran Persian</bdi></span>
+<span class="lang">Persian</span>
 <span class="go">Watch on YouTube</span></div></a><a class="card" href="https://www.youtube.com/@quran-polish" target="_blank" rel="noopener" data-q="polish polski quran polish">
 <div class="flag"><img src="flags/poland.jpg" alt="" loading="lazy"></div>
 <div class="txt"><span class="native" dir="ltr">Polski</span>
-<span class="lang">Polish · <bdi>Quran Polish</bdi></span>
+<span class="lang">Polish</span>
 <span class="go">Watch on YouTube</span></div></a><a class="card" href="https://www.youtube.com/@quran-portuguese" target="_blank" rel="noopener" data-q="portuguese português quran portuguese">
 <div class="flag"><img src="flags/portuguese.jpg" alt="" loading="lazy"></div>
 <div class="txt"><span class="native" dir="ltr">Português</span>
-<span class="lang">Portuguese · <bdi>Quran Portuguese</bdi></span>
+<span class="lang">Portuguese</span>
 <span class="go">Watch on YouTube</span></div></a><a class="card" href="https://www.youtube.com/@quran-romanian" target="_blank" rel="noopener" data-q="romanian română quran romanian">
 <div class="flag"><img src="flags/romanian.jpg" alt="" loading="lazy"></div>
 <div class="txt"><span class="native" dir="ltr">Română</span>
-<span class="lang">Romanian · <bdi>Quran Romanian</bdi></span>
+<span class="lang">Romanian</span>
 <span class="go">Watch on YouTube</span></div></a><a class="card" href="https://www.youtube.com/@quran-spanish" target="_blank" rel="noopener" data-q="spanish español quran spanish">
 <div class="flag"><img src="flags/spanish.jpg" alt="" loading="lazy"></div>
 <div class="txt"><span class="native" dir="ltr">Español</span>
-<span class="lang">Spanish · <bdi>Quran Spanish</bdi></span>
+<span class="lang">Spanish</span>
 <span class="go">Watch on YouTube</span></div></a><a class="card" href="https://www.youtube.com/@quran-swedish" target="_blank" rel="noopener" data-q="swedish svenska quran swedish">
 <div class="flag"><img src="flags/swedish.jpg" alt="" loading="lazy"></div>
 <div class="txt"><span class="native" dir="ltr">Svenska</span>
-<span class="lang">Swedish · <bdi>Quran Swedish</bdi></span>
+<span class="lang">Swedish</span>
 <span class="go">Watch on YouTube</span></div></a></div>
 <p class="none" id="none">No channel in that language yet.</p>
-<div class="thumbs"><img src="assets/thumb-ckb.jpg" alt="Kurdish thumbnail" loading="lazy"><img src="assets/thumb-fa.jpg" alt="Persian thumbnail" loading="lazy"><img src="assets/thumb-sv.jpg" alt="Swedish thumbnail" loading="lazy"></div>
 </div></section>
 
 <div class="verse"><div class="ar" dir="rtl">إِنَّ هَٰذَا ٱلۡقُرۡءَانَ يَهۡدِي لِلَّتِي هِيَ أَقۡوَمُ</div>
