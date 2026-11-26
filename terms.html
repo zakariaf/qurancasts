@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Terms of use — QuranCasts</title><meta name="description" content="The Holy Quran recited verse by verse, with the Arabic text, transliteration and a translation in your language.">
+<meta property="og:title" content="Terms of use — QuranCasts"><meta property="og:description" content="The Holy Quran recited verse by verse, with the Arabic text, transliteration and a translation in your language.">
+<meta property="og:image" content="https://qurancasts.com/assets/frame-sv-078.jpg"><meta name="theme-color" content="#0b100e">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230b100e'/%3E%3Cpath d='M32 9l6.6 15.9L54.5 32l-15.9 6.6L32 54.5l-6.6-15.9L9.5 32l15.9-6.6z' fill='%23F5C451'/%3E%3C/svg%3E">
+<style>
+@font-face { font-family: Amiri; src: url(fonts/Amiri-Bold.ttf); font-weight: 700; font-display: swap; }
+@font-face { font-family: Poppins; src: url(fonts/Poppins-Medium.ttf); font-weight: 500; font-display: swap; }
+@font-face { font-family: Poppins; src: url(fonts/Poppins-SemiBold.ttf); font-weight: 600; font-display: swap; }
+@font-face { font-family: Vazirmatn; src: url(fonts/Vazirmatn.ttf); font-display: swap; }
+@font-face { font-family: Hafs; src: url(fonts/UthmanicHafs.woff2); font-display: swap; }
+:root { --gold: #F5C451; --green: #7BD88F; --bg: #0b100e; --card: #121a16; --line: #22302a; --text: #ece8dc; --muted: #a9a597; }
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; background: var(--bg); color: var(--text); font: 500 16px/1.65 Poppins, Vazirmatn, system-ui, sans-serif; }
+a { color: var(--gold); text-decoration: none; }
+.wrap { max-width: 1140px; margin: 0 auto; padding: 0 24px; }
+
+/* hero */
+.hero { position: relative; min-height: 92vh; display: grid; place-items: center; text-align: center; overflow: hidden; }
+.hero::before { content: ""; position: absolute; inset: 0; background: url(assets/hero.jpg) center/cover; transform: scale(1.04);
+  animation: drift 40s ease-in-out infinite alternate; }
+.hero::after { content: ""; position: absolute; inset: 0;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='none' stroke='%23F5C451' stroke-opacity='.10' stroke-width='1'%3E%3Cpath d='M40 8l9.4 22.6L72 40l-22.6 9.4L40 72l-9.4-22.6L8 40l22.6-9.4z'/%3E%3Crect x='17' y='17' width='46' height='46' transform='rotate(45 40 40)'/%3E%3Crect x='17' y='17' width='46' height='46'/%3E%3C/g%3E%3C/svg%3E"), radial-gradient(ellipse at 50% 40%, rgba(11,16,14,.55), rgba(11,16,14,.92) 70%), linear-gradient(180deg, rgba(11,16,14,.2), var(--bg)); }
+@keyframes drift { to { transform: scale(1.12); } }
+.hero .in { position: relative; z-index: 1; padding: 80px 24px; }
+.basmala { font-family: Hafs; font-size: 26px; color: var(--muted); margin-bottom: 18px; }
+.title-ar { font-family: Amiri; font-weight: 700; font-size: clamp(64px, 11vw, 132px); line-height: 1.15; color: var(--gold);
+  text-shadow: 0 0 40px rgba(245,196,81,.25); }
+.brand { font-weight: 600; letter-spacing: .32em; text-transform: uppercase; font-size: 15px; color: var(--text); margin: 6px 0 22px; }
+.lead { max-width: 620px; margin: 0 auto 34px; color: #d6d2c4; font-size: 18px; }
+.btn { display: inline-block; padding: 13px 28px; border-radius: 999px; background: var(--gold); color: #1b1607; font-weight: 600; }
+.btn:hover { filter: brightness(1.08); }
+.stats { display: flex; justify-content: center; gap: 44px; margin-top: 48px; flex-wrap: wrap; }
+.stats b { display: block; font-size: 30px; color: var(--text); font-weight: 600; }
+.stats span { color: var(--muted); font-size: 14px; }
+
+/* sections */
+section { padding: 96px 0; }
+.eyebrow { color: var(--gold); font-weight: 600; letter-spacing: .2em; text-transform: uppercase; font-size: 13px; }
+h2 { font-size: clamp(28px, 4vw, 40px); line-height: 1.2; margin: 10px 0 16px; font-weight: 600; }
+.sub { color: var(--muted); max-width: 640px; }
+
+.show { display: grid; grid-template-columns: 1.35fr 1fr; gap: 56px; align-items: center; }
+.screen { border-radius: 18px; overflow: hidden; border: 1px solid var(--line);
+  box-shadow: 0 30px 80px rgba(0,0,0,.55), 0 0 0 1px rgba(245,196,81,.08), 0 0 60px rgba(245,196,81,.08); }
+.screen img { display: block; width: 100%; }
+.features { list-style: none; padding: 0; margin: 26px 0 0; display: grid; gap: 18px; }
+.features li { display: grid; grid-template-columns: 40px 1fr; gap: 14px; }
+.features i { width: 40px; height: 40px; border-radius: 12px; background: rgba(245,196,81,.12); color: var(--gold);
+  display: grid; place-items: center; font-style: normal; font-weight: 600; }
+.features b { display: block; }
+.features span { color: var(--muted); font-size: 15px; }
+
+/* channels */
+.head { display: flex; justify-content: space-between; align-items: end; gap: 24px; flex-wrap: wrap; margin-bottom: 34px; }
+.search { background: var(--card); border: 1px solid var(--line); color: var(--text); border-radius: 999px; padding: 12px 20px;
+  font: inherit; width: 280px; outline: none; }
+.search:focus { border-color: var(--gold); }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 20px; }
+.card { background: var(--card); border: 1px solid var(--line); border-radius: 16px; overflow: hidden; color: inherit;
+  transition: transform .25s, border-color .25s, box-shadow .25s; display: flex; flex-direction: column; }
+.card:hover { transform: translateY(-4px); border-color: rgba(245,196,81,.6); box-shadow: 0 18px 40px rgba(0,0,0,.45); }
+.flag { aspect-ratio: 16/9; background: #0e1411; overflow: hidden; }
+.flag img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform .4s; }
+.card:hover .flag img { transform: scale(1.05); }
+.card .txt { padding: 16px 18px 18px; display: flex; flex-direction: column; gap: 2px; flex: 1; }
+.card .native { font-size: 22px; font-weight: 600; line-height: 1.3; }
+.card .lang { color: var(--muted); font-size: 14px; }
+.card .go { margin-top: 12px; font-size: 14px; color: var(--gold); display: flex; align-items: center; gap: 8px; }
+.card .go::before { content: ""; width: 22px; height: 16px; border-radius: 4px; background: #ff3d3d;
+  clip-path: polygon(0 0,100% 0,100% 100%,0 100%,0 0,38% 25%,38% 75%,72% 50%,38% 25%); }
+.none { color: var(--muted); display: none; padding: 20px 0; }
+
+
+.verse { text-align: center; padding: 90px 24px; background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='none' stroke='%23F5C451' stroke-opacity='.10' stroke-width='1'%3E%3Cpath d='M40 8l9.4 22.6L72 40l-22.6 9.4L40 72l-9.4-22.6L8 40l22.6-9.4z'/%3E%3Crect x='17' y='17' width='46' height='46' transform='rotate(45 40 40)'/%3E%3Crect x='17' y='17' width='46' height='46'/%3E%3C/g%3E%3C/svg%3E"), linear-gradient(180deg, var(--bg), #0f1713 50%, var(--bg)); }
+.verse .ar { font-family: Hafs; font-size: clamp(30px, 4.5vw, 46px); color: var(--gold); line-height: 1.9; }
+.verse p { color: #d6d2c4; font-size: 18px; margin: 10px 0 4px; }
+.verse small { color: var(--muted); }
+
+footer { border-top: 1px solid var(--line); padding: 30px 0 40px; color: var(--muted); font-size: 14px; }
+footer .wrap { display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+footer a { color: var(--muted); margin-left: 18px; } footer a:hover { color: var(--gold); }
+
+article { max-width: 760px; margin: 0 auto; padding: 70px 24px 80px; }
+article h1 { font-size: 40px; font-weight: 600; margin: 8px 0 24px; } article h2 { font-size: 22px; margin: 34px 0 6px; }
+article p, article li { color: #d6d2c4; }
+.top { padding: 22px 0; border-bottom: 1px solid var(--line); }
+.top a { font-family: Amiri; font-size: 26px; color: var(--gold); }
+
+@media (max-width: 860px) { .show { grid-template-columns: 1fr; } .search { width: 100%; } }
+</style></head>
+<body>
+<div class="top"><div class="wrap"><a href="./">القرآن الكريم · QuranCasts</a></div></div>
+<article><div class="eyebrow">QuranCasts</div><h1>Terms of use</h1>
+<h2>This website</h2>
+<p>This website lists the QuranCasts YouTube channels. It is free to use, has no accounts and sells nothing.
+The content is provided as is, for reading and listening to the Holy Quran.</p>
+<h2>Our videos</h2>
+<p>Our videos are published on YouTube. Watching them on YouTube is subject to the
+<a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>. The Arabic text, transliteration and
+translations come from the sources credited in each video's description; the recitations belong to their reciters.</p>
+<h2>Our internal YouTube tool</h2>
+<p>Our private tool that uses YouTube API Services is used only by us to manage our own channels. It is not
+offered, sold or distributed to anyone, and it is used in line with the YouTube API Services Terms of Service and
+Developer Policies. See also our <a href="privacy.html">privacy policy</a>.</p>
+<h2>Changes</h2><p>If these terms change, the new version will be published on this page.</p>
+</article>
+<footer><div class="wrap"><span>© QuranCasts</span><span><a href="./#channels">Channels</a><a href="privacy.html">Privacy policy</a><a href="terms.html">Terms</a></span></div></footer>
+</body></html>
