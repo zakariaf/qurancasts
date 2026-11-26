@@ -73,8 +73,6 @@ h2 { font-size: clamp(28px, 4vw, 40px); line-height: 1.2; margin: 10px 0 16px; f
   clip-path: polygon(0 0,100% 0,100% 100%,0 100%,0 0,38% 25%,38% 75%,72% 50%,38% 25%); }
 .none { color: var(--muted); display: none; padding: 20px 0; }
 
-.thumbs { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-top: 36px; }
-.thumbs img { width: 100%; border-radius: 12px; border: 1px solid var(--line); display: block; }
 
 .verse { text-align: center; padding: 90px 24px; background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='none' stroke='%23F5C451' stroke-opacity='.10' stroke-width='1'%3E%3Cpath d='M40 8l9.4 22.6L72 40l-22.6 9.4L40 72l-9.4-22.6L8 40l22.6-9.4z'/%3E%3Crect x='17' y='17' width='46' height='46' transform='rotate(45 40 40)'/%3E%3Crect x='17' y='17' width='46' height='46'/%3E%3C/g%3E%3C/svg%3E"), linear-gradient(180deg, var(--bg), #0f1713 50%, var(--bg)); }
 .verse .ar { font-family: Hafs; font-size: clamp(30px, 4.5vw, 46px); color: var(--gold); line-height: 1.9; }
@@ -91,7 +89,7 @@ article p, article li { color: #d6d2c4; }
 .top { padding: 22px 0; border-bottom: 1px solid var(--line); }
 .top a { font-family: Amiri; font-size: 26px; color: var(--gold); }
 
-@media (max-width: 860px) { .show { grid-template-columns: 1fr; } .thumbs { grid-template-columns: 1fr; } .search { width: 100%; } }
+@media (max-width: 860px) { .show { grid-template-columns: 1fr; } .search { width: 100%; } }
 </style></head>
 <body>
 <header class="hero"><div class="in">
@@ -105,7 +103,7 @@ in your own language.</p>
 </div></header>
 
 <section><div class="wrap show">
-<div class="screen"><img src="assets/frame-sv-078.jpg" alt="A video frame: surah An-Naba, verse 10, Arabic with transliteration and Swedish translation" loading="lazy"></div>
+<div class="screen"><img src="assets/frame-sv-078.jpg" alt="A video frame: surah An-Naba, verse 14, the recited word lit in gold, with transliteration and Swedish translation" loading="lazy"></div>
 <div><div class="eyebrow">Every video</div><h2>Follow every word as it is recited</h2>
 <p class="sub">One video for each surah, recited by a renowned reciter. Read along, understand, and listen.</p>
 <ul class="features">
@@ -201,7 +199,6 @@ in your own language.</p>
 <span class="lang">Swedish · <bdi>Quran Swedish</bdi></span>
 <span class="go">Watch on YouTube</span></div></a></div>
 <p class="none" id="none">No channel in that language yet.</p>
-<div class="thumbs"><img src="assets/thumb-ckb.jpg" alt="Kurdish thumbnail" loading="lazy"><img src="assets/thumb-fa.jpg" alt="Persian thumbnail" loading="lazy"><img src="assets/thumb-sv.jpg" alt="Swedish thumbnail" loading="lazy"></div>
 </div></section>
 
 <div class="verse"><div class="ar" dir="rtl">إِنَّ هَٰذَا ٱلۡقُرۡءَانَ يَهۡدِي لِلَّتِي هِيَ أَقۡوَمُ</div>
