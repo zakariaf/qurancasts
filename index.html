@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>QuranCasts — The Holy Quran with translation in your language</title><meta name="description" content="The Holy Quran recited verse by verse, with the Arabic text, transliteration and a translation in your language.">
+<meta property="og:title" content="QuranCasts — The Holy Quran with translation in your language"><meta property="og:description" content="The Holy Quran recited verse by verse, with the Arabic text, transliteration and a translation in your language.">
+<meta property="og:image" content="https://qurancasts.com/assets/frame-sv-078.jpg"><meta name="theme-color" content="#0b100e">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230b100e'/%3E%3Cpath d='M32 9l6.6 15.9L54.5 32l-15.9 6.6L32 54.5l-6.6-15.9L9.5 32l15.9-6.6z' fill='%23F5C451'/%3E%3C/svg%3E">
+<style>
+@font-face { font-family: Amiri; src: url(fonts/Amiri-Bold.ttf); font-weight: 700; font-display: swap; }
+@font-face { font-family: Poppins; src: url(fonts/Poppins-Medium.ttf); font-weight: 500; font-display: swap; }
+@font-face { font-family: Poppins; src: url(fonts/Poppins-SemiBold.ttf); font-weight: 600; font-display: swap; }
+@font-face { font-family: Vazirmatn; src: url(fonts/Vazirmatn.ttf); font-display: swap; }
+@font-face { font-family: Hafs; src: url(fonts/UthmanicHafs.woff2); font-display: swap; }
+:root { --gold: #F5C451; --green: #7BD88F; --bg: #0b100e; --card: #121a16; --line: #22302a; --text: #ece8dc; --muted: #a9a597; }
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; background: var(--bg); color: var(--text); font: 500 16px/1.65 Poppins, Vazirmatn, system-ui, sans-serif; }
+a { color: var(--gold); text-decoration: none; }
+.wrap { max-width: 1140px; margin: 0 auto; padding: 0 24px; }
+
+/* hero */
+.hero { position: relative; min-height: 92vh; display: grid; place-items: center; text-align: center; overflow: hidden; }
+.hero::before { content: ""; position: absolute; inset: 0; background: url(assets/hero.jpg) center/cover; transform: scale(1.04);
+  animation: drift 40s ease-in-out infinite alternate; }
+.hero::after { content: ""; position: absolute; inset: 0;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='none' stroke='%23F5C451' stroke-opacity='.10' stroke-width='1'%3E%3Cpath d='M40 8l9.4 22.6L72 40l-22.6 9.4L40 72l-9.4-22.6L8 40l22.6-9.4z'/%3E%3Crect x='17' y='17' width='46' height='46' transform='rotate(45 40 40)'/%3E%3Crect x='17' y='17' width='46' height='46'/%3E%3C/g%3E%3C/svg%3E"), radial-gradient(ellipse at 50% 40%, rgba(11,16,14,.55), rgba(11,16,14,.92) 70%), linear-gradient(180deg, rgba(11,16,14,.2), var(--bg)); }
+@keyframes drift { to { transform: scale(1.12); } }
+.hero .in { position: relative; z-index: 1; padding: 80px 24px; }
+.basmala { font-family: Hafs; font-size: 26px; color: var(--muted); margin-bottom: 18px; }
+.title-ar { font-family: Amiri; font-weight: 700; font-size: clamp(64px, 11vw, 132px); line-height: 1.15; color: var(--gold);
+  text-shadow: 0 0 40px rgba(245,196,81,.25); }
+.brand { font-weight: 600; letter-spacing: .32em; text-transform: uppercase; font-size: 15px; color: var(--text); margin: 6px 0 22px; }
+.lead { max-width: 620px; margin: 0 auto 34px; color: #d6d2c4; font-size: 18px; }
+.btn { display: inline-block; padding: 13px 28px; border-radius: 999px; background: var(--gold); color: #1b1607; font-weight: 600; }
+.btn:hover { filter: brightness(1.08); }
+.stats { display: flex; justify-content: center; gap: 44px; margin-top: 48px; flex-wrap: wrap; }
+.stats b { display: block; font-size: 30px; color: var(--text); font-weight: 600; }
+.stats span { color: var(--muted); font-size: 14px; }
+
+/* sections */
+section { padding: 96px 0; }
+.eyebrow { color: var(--gold); font-weight: 600; letter-spacing: .2em; text-transform: uppercase; font-size: 13px; }
+h2 { font-size: clamp(28px, 4vw, 40px); line-height: 1.2; margin: 10px 0 16px; font-weight: 600; }
+.sub { color: var(--muted); max-width: 640px; }
+
+.show { display: grid; grid-template-columns: 1.35fr 1fr; gap: 56px; align-items: center; }
+.screen { border-radius: 18px; overflow: hidden; border: 1px solid var(--line);
+  box-shadow: 0 30px 80px rgba(0,0,0,.55), 0 0 0 1px rgba(245,196,81,.08), 0 0 60px rgba(245,196,81,.08); }
+.screen img { display: block; width: 100%; }
+.features { list-style: none; padding: 0; margin: 26px 0 0; display: grid; gap: 18px; }
+.features li { display: grid; grid-template-columns: 40px 1fr; gap: 14px; }
+.features i { width: 40px; height: 40px; border-radius: 12px; background: rgba(245,196,81,.12); color: var(--gold);
+  display: grid; place-items: center; font-style: normal; font-weight: 600; }
+.features b { display: block; }
+.features span { color: var(--muted); font-size: 15px; }
+
+/* channels */
+.head { display: flex; justify-content: space-between; align-items: end; gap: 24px; flex-wrap: wrap; margin-bottom: 34px; }
+.search { background: var(--card); border: 1px solid var(--line); color: var(--text); border-radius: 999px; padding: 12px 20px;
+  font: inherit; width: 280px; outline: none; }
+.search:focus { border-color: var(--gold); }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 20px; }
+.card { background: var(--card); border: 1px solid var(--line); border-radius: 16px; overflow: hidden; color: inherit;
+  transition: transform .25s, border-color .25s, box-shadow .25s; display: flex; flex-direction: column; }
+.card:hover { transform: translateY(-4px); border-color: rgba(245,196,81,.6); box-shadow: 0 18px 40px rgba(0,0,0,.45); }
+.flag { aspect-ratio: 16/9; background: #0e1411; overflow: hidden; }
+.flag img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform .4s; }
+.card:hover .flag img { transform: scale(1.05); }
+.card .txt { padding: 16px 18px 18px; display: flex; flex-direction: column; gap: 2px; flex: 1; }
+.card .native { font-size: 22px; font-weight: 600; line-height: 1.3; }
+.card .lang { color: var(--muted); font-size: 14px; }
+.card .go { margin-top: 12px; font-size: 14px; color: var(--gold); display: flex; align-items: center; gap: 8px; }
+.card .go::before { content: ""; width: 22px; height: 16px; border-radius: 4px; background: #ff3d3d;
+  clip-path: polygon(0 0,100% 0,100% 100%,0 100%,0 0,38% 25%,38% 75%,72% 50%,38% 25%); }
+.none { color: var(--muted); display: none; padding: 20px 0; }
+
+.thumbs { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-top: 36px; }
+.thumbs img { width: 100%; border-radius: 12px; border: 1px solid var(--line); display: block; }
+
+.verse { text-align: center; padding: 90px 24px; background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='none' stroke='%23F5C451' stroke-opacity='.10' stroke-width='1'%3E%3Cpath d='M40 8l9.4 22.6L72 40l-22.6 9.4L40 72l-9.4-22.6L8 40l22.6-9.4z'/%3E%3Crect x='17' y='17' width='46' height='46' transform='rotate(45 40 40)'/%3E%3Crect x='17' y='17' width='46' height='46'/%3E%3C/g%3E%3C/svg%3E"), linear-gradient(180deg, var(--bg), #0f1713 50%, var(--bg)); }
+.verse .ar { font-family: Hafs; font-size: clamp(30px, 4.5vw, 46px); color: var(--gold); line-height: 1.9; }
+.verse p { color: #d6d2c4; font-size: 18px; margin: 10px 0 4px; }
+.verse small { color: var(--muted); }
+
+footer { border-top: 1px solid var(--line); padding: 30px 0 40px; color: var(--muted); font-size: 14px; }
+footer .wrap { display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+footer a { color: var(--muted); margin-left: 18px; } footer a:hover { color: var(--gold); }
+
+article { max-width: 760px; margin: 0 auto; padding: 70px 24px 80px; }
+article h1 { font-size: 40px; font-weight: 600; margin: 8px 0 24px; } article h2 { font-size: 22px; margin: 34px 0 6px; }
+article p, article li { color: #d6d2c4; }
+.top { padding: 22px 0; border-bottom: 1px solid var(--line); }
+.top a { font-family: Amiri; font-size: 26px; color: var(--gold); }
+
+@media (max-width: 860px) { .show { grid-template-columns: 1fr; } .thumbs { grid-template-columns: 1fr; } .search { width: 100%; } }
+</style></head>
+<body>
+<header class="hero"><div class="in">
+<div class="basmala">بِسۡمِ ٱللَّهِ ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ</div>
+<div class="title-ar">القرآن الكريم</div>
+<div class="brand">QuranCasts</div>
+<p class="lead">The Holy Quran recited verse by verse — the Arabic text, its transliteration and a trusted translation,
+in your own language.</p>
+<a class="btn" href="#channels">Find your language</a>
+<div class="stats"><div><b>20</b><span>languages</span></div><div><b>114</b><span>surahs</span></div><div><b>1</b><span>channel per language</span></div></div>
+</div></header>
+
+<section><div class="wrap show">
+<div class="screen"><img src="assets/frame-sv-078.jpg" alt="A video frame: surah An-Naba, verse 10, Arabic with transliteration and Swedish translation" loading="lazy"></div>
+<div><div class="eyebrow">Every video</div><h2>Follow every word as it is recited</h2>
+<p class="sub">One video for each surah, recited by a renowned reciter. Read along, understand, and listen.</p>
+<ul class="features">
+<li><i>١</i><div><b>The Arabic text</b><span>In the Uthmani script of the Madinah Mushaf.</span></div></li>
+<li><i>٢</i><div><b>Word by word</b><span>The word being recited lights up in gold, in sync with the recitation.</span></div></li>
+<li><i>٣</i><div><b>Transliteration</b><span>To read along even if you don't read Arabic yet.</span></div></li>
+<li><i>٤</i><div><b>Your language</b><span>A translation by a respected translator, verse by verse.</span></div></li>
+</ul></div></div></section>
+
+<section id="channels" style="padding-top:40px"><div class="wrap">
+<div class="head"><div><div class="eyebrow">Channels</div><h2>Choose your language</h2>
+<p class="sub">Each language has its own YouTube channel: one video per surah, with new surahs added regularly.</p></div>
+<input class="search" type="search" placeholder="Search a language…" aria-label="Search a language" oninput="f(this.value)"></div>
+<div class="grid" id="g"><a class="card" href="https://www.youtube.com/@quran-albanian" target="_blank" rel="noopener" data-q="albanian shqip quran albanian">
+<div class="flag"><img src="flags/albanian.jpg" alt="" loading="lazy"></div>
+<div class="txt"><span class="native" dir="ltr">Shqip</span>
+<span class="lang">Albanian · <bdi>Quran Albanian</bdi></span>
+<span class="go">Watch on YouTube</span></div></a><a class="card" href="https://www.youtube.com/@quran-bosnian" target="_blank" rel="noopener" data-q="bosnian bosanski quran bosnian">
+<div class="flag"><img src="flags/bosnian.jpg" alt="" loading="lazy"></div>
+<div class="txt"><span class="native" dir="ltr">Bosanski</span>
+<span class="lang">Bosnian · <bdi>Quran Bosnian</bdi></span>
+<span class="go">Watch on YouTube</span></div></a><a class="card" href="https://www.youtube.com/@quran-czech" target="_blank" rel="noopener" data-q="czech čeština quran czech">
+<div class="flag"><img src="flags/czech.jpg" alt="" loading="lazy"></div>
+<div class="txt"><span class="native" dir="ltr">Čeština</span>
+<span class="lang">Czech · <bdi>Quran Czech</bdi></span>
+<span class="go">Watch on YouTube</span></div></a><a class="card" href="https://www.youtube.com/@quran-dutch" target="_blank" rel="noopener" data-q="dutch nederlands quran dutch">
+<div class="flag"><img src="flags/dutch.jpg" alt="" loading="lazy"></div>
+<div class="txt"><span class="native" dir="ltr">Nederlands</span>
+<span class="lang">Dutch · <bdi>Quran Dutch</bdi></span>
+<span class="go">Watch on YouTube</span></div></a><a class="card" href="https://www.youtube.com/@quran-en-translation" target="_blank" rel="noopener" data-q="english english quran english">
+<div class="flag"><img src="flags/english.jpg" alt="" loading="lazy"></div>
+<div class="txt"><span class="native" dir="ltr">English</span>
+<span class="lang">English · <bdi>Quran English</bdi></span>
+<span class="go">Watch on YouTube</span></div></a><a class="card" href="https://www.youtube.com/@quran-finnish" target="_blank" rel="noopener" data-q="finnish suomi quran finnish">
+<div class="flag"><img src="flags/finnish.jpg" alt="" loading="lazy"></div>
+<div class="txt"><span class="native" dir="ltr">Suomi</span>
+<span class="lang">Finnish · <bdi>Quran Finnish</bdi></span>
+<span class="go">Watch on YouTube</span></div></a><a class="card" href="https://www.youtube.com/@coran-francais" target="_blank" rel="noopener" data-q="french français coran français">
+<div class="flag"><img src="flags/french.jpg" alt="" loading="lazy"></div>
+<div class="txt"><span class="native" dir="ltr">Français</span>
+<span class="lang">French · <bdi>Coran Français</bdi></span>
+<span class="go">Watch on YouTube</span></div></a><a class="card" href="https://www.youtube.com/@quran-deutsch" target="_blank" rel="noopener" data-q="german deutsch quran deutsch">
+<div class="flag"><img src="flags/german.jpg" alt="" loading="lazy"></div>
+<div class="txt"><span class="native" dir="ltr">Deutsch</span>
+<span class="lang">German · <bdi>Quran Deutsch</bdi></span>
+<span class="go">Watch on YouTube</span></div></a><a class="card" href="https://www.youtube.com/@quran-hindi" target="_blank" rel="noopener" data-q="hindi हिन्दी quran hindi">
+<div class="flag"><img src="flags/india.svg" alt="" loading="lazy"></div>
+<div class="txt"><span class="native" dir="ltr">हिन्दी</span>
+<span class="lang">Hindi · <bdi>Quran Hindi</bdi></span>
+<span class="go">Watch on YouTube</span></div></a><a class="card" href="https://www.youtube.com/@quran-italian" target="_blank" rel="noopener" data-q="italian italiano quran italian">
+<div class="flag"><img src="flags/italian.jpg" alt="" loading="lazy"></div>
+<div class="txt"><span class="native" dir="ltr">Italiano</span>
+<span class="lang">Italian · <bdi>Quran Italian</bdi></span>
+<span class="go">Watch on YouTube</span></div></a><a class="card" href="https://www.youtube.com/@quran-japanese" target="_blank" rel="noopener" data-q="japanese 日本語 quran japanese">
+<div class="flag"><img src="flags/japanese.jpg" alt="" loading="lazy"></div>
+<div class="txt"><span class="native" dir="ltr">日本語</span>
+<span class="lang">Japanese · <bdi>Quran Japanese</bdi></span>
+<span class="go">Watch on YouTube</span></div></a><a class="card" href="https://www.youtube.com/@quran-korean" target="_blank" rel="noopener" data-q="korean 한국어 quran korean">
+<div class="flag"><img src="flags/korean.jpg" alt="" loading="lazy"></div>
+<div class="txt"><span class="native" dir="ltr">한국어</span>
+<span class="lang">Korean · <bdi>Quran Korean</bdi></span>
+<span class="go">Watch on YouTube</span></div></a><a class="card" href="https://www.youtube.com/@quran-ba-kurdi" target="_blank" rel="noopener" data-q="kurdish کوردی قورئانی پیرۆز به کوردی">
+<div class="flag"><img src="flags/kurdistan.jpg" alt="" loading="lazy"></div>
+<div class="txt"><span class="native" dir="rtl">کوردی</span>
+<span class="lang">Kurdish · <bdi>قورئانی پیرۆز به کوردی</bdi></span>
+<span class="go">Watch on YouTube</span></div></a><a class="card" href="https://www.youtube.com/@quran-norwegian" target="_blank" rel="noopener" data-q="norwegian norsk quran norwegian">
+<div class="flag"><img src="flags/norwegian.jpg" alt="" loading="lazy"></div>
+<div class="txt"><span class="native" dir="ltr">Norsk</span>
+<span class="lang">Norwegian · <bdi>Quran Norwegian</bdi></span>
+<span class="go">Watch on YouTube</span></div></a><a class="card" href="https://www.youtube.com/@Quran-in-Persian" target="_blank" rel="noopener" data-q="persian فارسی quran persian">
+<div class="flag"><img src="flags/persian.jpg" alt="" loading="lazy"></div>
+<div class="txt"><span class="native" dir="rtl">فارسی</span>
+<span class="lang">Persian · <bdi>Quran Persian</bdi></span>
+<span class="go">Watch on YouTube</span></div></a><a class="card" href="https://www.youtube.com/@quran-polish" target="_blank" rel="noopener" data-q="polish polski quran polish">
+<div class="flag"><img src="flags/poland.jpg" alt="" loading="lazy"></div>
+<div class="txt"><span class="native" dir="ltr">Polski</span>
+<span class="lang">Polish · <bdi>Quran Polish</bdi></span>
+<span class="go">Watch on YouTube</span></div></a><a class="card" href="https://www.youtube.com/@quran-portuguese" target="_blank" rel="noopener" data-q="portuguese português quran portuguese">
+<div class="flag"><img src="flags/portuguese.jpg" alt="" loading="lazy"></div>
+<div class="txt"><span class="native" dir="ltr">Português</span>
+<span class="lang">Portuguese · <bdi>Quran Portuguese</bdi></span>
+<span class="go">Watch on YouTube</span></div></a><a class="card" href="https://www.youtube.com/@quran-romanian" target="_blank" rel="noopener" data-q="romanian română quran romanian">
+<div class="flag"><img src="flags/romanian.jpg" alt="" loading="lazy"></div>
+<div class="txt"><span class="native" dir="ltr">Română</span>
+<span class="lang">Romanian · <bdi>Quran Romanian</bdi></span>
+<span class="go">Watch on YouTube</span></div></a><a class="card" href="https://www.youtube.com/@quran-spanish" target="_blank" rel="noopener" data-q="spanish español quran spanish">
+<div class="flag"><img src="flags/spanish.jpg" alt="" loading="lazy"></div>
+<div class="txt"><span class="native" dir="ltr">Español</span>
+<span class="lang">Spanish · <bdi>Quran Spanish</bdi></span>
+<span class="go">Watch on YouTube</span></div></a><a class="card" href="https://www.youtube.com/@quran-swedish" target="_blank" rel="noopener" data-q="swedish svenska quran swedish">
+<div class="flag"><img src="flags/swedish.jpg" alt="" loading="lazy"></div>
+<div class="txt"><span class="native" dir="ltr">Svenska</span>
+<span class="lang">Swedish · <bdi>Quran Swedish</bdi></span>
+<span class="go">Watch on YouTube</span></div></a></div>
+<p class="none" id="none">No channel in that language yet.</p>
+<div class="thumbs"><img src="assets/thumb-ckb.jpg" alt="Kurdish thumbnail" loading="lazy"><img src="assets/thumb-fa.jpg" alt="Persian thumbnail" loading="lazy"><img src="assets/thumb-sv.jpg" alt="Swedish thumbnail" loading="lazy"></div>
+</div></section>
+
+<div class="verse"><div class="ar" dir="rtl">إِنَّ هَٰذَا ٱلۡقُرۡءَانَ يَهۡدِي لِلَّتِي هِيَ أَقۡوَمُ</div>
+<p>“Indeed, this Qur’ān guides to that which is most suitable.”</p><small>Al-Isra 17:9 · Sahih International</small></div>
+<script>
+function f(q){q=q.trim().toLowerCase();let n=0;for(const c of document.querySelectorAll('#g .card')){const s=!q||c.dataset.q.includes(q);c.style.display=s?'':'none';n+=s}document.getElementById('none').style.display=n?'none':'block'}
+</script>
+<footer><div class="wrap"><span>© QuranCasts</span><span><a href="./#channels">Channels</a><a href="privacy.html">Privacy policy</a></span></div></footer>
+</body></html>
